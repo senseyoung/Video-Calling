@@ -4,7 +4,7 @@ import re
 import os
 
 def main():
-    RTM_SDK_URL = ""
+    RTM_SDK_URL = "https://download.agora.io/rtmsdk/release/Agora_RTM_SDK_for_iOS_v1_2_2.zip?_ga=2.86470680.1650799636.1583667533-5559409.1503304822"
     
     if "RTM_SDK_URL" in os.environ:
         RTM_SDK_URL = os.environ["RTM_SDK_URL"]
@@ -22,9 +22,6 @@ def main():
     os.system(rm)
     
     rm = "rm -r " + "*.zip"
-    os.system(rm)
-    
-    rm = "rm -r " + APP_NAME + "/" + "*.framework"
     os.system(rm)
     
     # RTM SDK Download
