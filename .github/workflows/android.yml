@@ -21,4 +21,5 @@ jobs:
       working-directory: OpenDuo-Android
       run: chmod +x ./gradlew
     - name: build
+      working-directory: OpenDuo-Android
       run: ./gradlew  
