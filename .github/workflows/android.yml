@@ -22,4 +22,8 @@ jobs:
       run: chmod +x ./gradlew
     - name: build
       working-directory: OpenDuo-Android
-      run: ./gradlew assembleDebug  
+      run: ./gradlew assembleDebug
+    - uses: actions/upload-artifact@v2
+      with:
+        name: debugAPK
+        path: app/build/outputs/apk/debug/app-debug.apk  
